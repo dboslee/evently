@@ -1,7 +1,8 @@
-# Evently
+# Evently [![Build Status](https://travis-ci.com/dboslee/evently.svg?branch=master)](https://travis-ci.com/dboslee/evently)
 
 A lightweight event bus for python asyncio
 <br></br>
+
 **About Evently**:
 - Written in python3.8
 - Built around asynio
