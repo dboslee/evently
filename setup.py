@@ -1,15 +1,9 @@
-import os
 from setuptools import setup, find_packages
-
-
-with open(os.path.join(os.path.dirname(__file__), 'README.md')) as fh:
-    readme = fh.read()
 
 setup(
     name='evently',
     version=__import__('evently').__version__,
     description='evently, a lightweight event bus.',
-    long_description=readme,
     author='David Boslee',
     author_email='dboslee@gmail.com',
     url='http://github.com/dboslee/evently/',
