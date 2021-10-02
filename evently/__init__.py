@@ -4,6 +4,9 @@ from .api import (
     Evently,
     EventHandler
 )
+from .utils import (
+    run_callback_threadsafe
+)
 
 __author__ = 'David Boslee'
 __license__ = 'MIT'
@@ -13,5 +16,6 @@ __all__ = [
     ALL_EVENTS,
     Evently,
     Event,
-    EventHandler
+    EventHandler,
+    run_callback_threadsafe
 ]
