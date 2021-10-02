@@ -6,9 +6,9 @@ from evently import (
     ALL_EVENTS,
     Event,
     Evently,
-    EventHandler
+    EventHandler,
+    run_callback_threadsafe
 )
-from evently import utils
 
 TEST_EVENT = "test_event"
 TEST_EVENT_2 = "test_event_2"
@@ -32,7 +32,7 @@ def get_event_evently():
         loop.close()
 
     def iterate_loop_threadsafe():
-        utils.run_callback_threadsafe(loop, lambda: None).result()
+        run_callback_threadsafe(loop, lambda: None).result()
 
     threading.Thread(name="LoopThread", target=run_loop, daemon=False).start()
     evently = Evently(loop)
